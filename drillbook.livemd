@@ -11,25 +11,25 @@ This is a companion drillbook for the Dockyard Academy curriculum. It mirrors th
 * Comments
 * Arithmetic
 * [Strings](drills/strings.livemd)
-* Booleans
-* Comparison Operators
-* Match Operator
+* [Booleans](drills/booleans.livemd)
+* [Comparison Operators](drills/comparison.livemd)
+* [Match Operator](drills/match.livemd)
 
 <!-- livebook:{"break_markdown":true} -->
 
 ### Data Structures and Intro to Pattern Matching
 
-* Atoms
-* Tuples
-* Lists
-* Keyword Lists
-* Maps
+* [Atoms](drills/atoms.livemd)
+* [Tuples](drills/tuples.livemd)
+* [Lists](drills/lists.livemd)
+* [Keywords](drills/keyword.livemd)
+* [Maps](drills/maps.livemd)
 
 <!-- livebook:{"break_markdown":true} -->
 
 ### Modules and Structs
 
-* Modules
+* [Modules](drills/modules.livemd)
 * Structs
 
 <!-- livebook:{"break_markdown":true} -->
