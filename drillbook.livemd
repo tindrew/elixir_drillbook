@@ -1,0 +1,86 @@
+# Elixir Drillbook
+
+## Overview
+
+This is a companion drillbook for the Dockyard Academy curriculum. It mirrors the sections and provides extra drills for the basics to help develop muscle memory for syntax and should be completed along with each section and repeated as needed to help with recall.
+
+## Core Syntax
+
+### Basics
+
+* Comments
+* Arithmetic
+* [Strings](drills/strings.livemd)
+* Booleans
+* Comparison Operators
+* Match Operator
+
+<!-- livebook:{"break_markdown":true} -->
+
+### Data Structures and Intro to Pattern Matching
+
+* Atoms
+* Tuples
+* Lists
+* Keyword Lists
+* Maps
+
+<!-- livebook:{"break_markdown":true} -->
+
+### Modules and Structs
+
+* Modules
+* Structs
+
+<!-- livebook:{"break_markdown":true} -->
+
+### Enumeration
+
+* Ranges
+* Enum
+
+<!-- livebook:{"break_markdown":true} -->
+
+### Comprehensions and Non-Enumerable Data Types
+
+* Enumerating on Non-Enumerables
+* Comprehensions
+
+<!-- livebook:{"break_markdown":true} -->
+
+### Built-in Modules
+
+* Built-In Modules
+
+<!-- livebook:{"break_markdown":true} -->
+
+### Reduce
+
+* Reduce
+
+<!-- livebook:{"break_markdown":true} -->
+
+### Advanced Pattern Matching
+
+* Polymorphism
+* Advanced Pattern Matching
+
+<!-- livebook:{"break_markdown":true} -->
+
+### Dates and Time
+
+* Dates and Times
+
+<!-- livebook:{"break_markdown":true} -->
+
+### Guards
+
+* Reading
+* Guards
+
+<!-- livebook:{"break_markdown":true} -->
+
+### String Manipulation
+
+* Strings and Binaries
+* Regex

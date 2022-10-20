@@ -1,0 +1,35 @@
+# Strings
+
+## Drills
+
+### The concatonate Operator <>
+
+<!-- livebook:{"break_markdown":true} -->
+
+#### We can do these a couple different styles. Style #1 is below:
+
+```elixir
+# use the concatonate operator <> to tie strings together
+
+# Tie "Tomorrow is " and "Another Day" together
+"Tomorrow is " <> "another day"
+
+# Tie "Wordle is " "a turtle" together
+"Wordle is " <> "a turtle"
+```
+
+### Style 2:
+
+```elixir
+# Tie "I'm going slightly" and "mad like the hatter." together
+"I'm going slightly" <> " mad like the hatter."
+```
+
+```elixir
+# Tie "Which way does the " and "wind blowwwww" together
+"Which way does the " <> "wind blowwww"
+```
+
+```elixir
+gs
+```
