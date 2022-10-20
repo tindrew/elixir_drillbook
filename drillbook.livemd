@@ -8,11 +8,11 @@ This is a companion drillbook for the Dockyard Academy curriculum. It mirrors th
 
 ### Basics
 
-* Comments
-* Arithmetic
+* [Comments](drills/comments.livemd)
+* [Arithmetic](drills/arithmetic.livemd)
 * [Strings](drills/strings.livemd)
 * [Booleans](drills/booleans.livemd)
-* [Comparison Operators](drills/comparison.livemd)
+* [Comparison Operators](drills/comparisons.livemd)
 * [Match Operator](drills/match.livemd)
 
 <!-- livebook:{"break_markdown":true} -->
@@ -30,57 +30,56 @@ This is a companion drillbook for the Dockyard Academy curriculum. It mirrors th
 ### Modules and Structs
 
 * [Modules](drills/modules.livemd)
-* Structs
+* [Structs](drills/structs.livemd)
 
 <!-- livebook:{"break_markdown":true} -->
 
 ### Enumeration
 
-* Ranges
-* Enum
+* [Ranges](drills/ranges.livemd)
+* [Enum](drills/enum.livemd)
 
 <!-- livebook:{"break_markdown":true} -->
 
 ### Comprehensions and Non-Enumerable Data Types
 
-* Enumerating on Non-Enumerables
-* Comprehensions
+* [Enumerating on Non-Enumerables](drills/enumerating.livemd)
+* [Comprehensions](drills/comprehensions.livemd)
 
 <!-- livebook:{"break_markdown":true} -->
 
 ### Built-in Modules
 
-* Built-In Modules
+* [Built-In Modules](drills/built-in.livemd)
 
 <!-- livebook:{"break_markdown":true} -->
 
 ### Reduce
 
-* Reduce
+* [Reduce](drills/reduce.livemd)
 
 <!-- livebook:{"break_markdown":true} -->
 
 ### Advanced Pattern Matching
 
-* Polymorphism
-* Advanced Pattern Matching
+* [Polymorphism](drills/polymorphism.livemd)
+* [Advanced Pattern Matching](drills/advpattern.livemd)
 
 <!-- livebook:{"break_markdown":true} -->
 
 ### Dates and Time
 
-* Dates and Times
+* [Dates and Times](drills/datetime.livemd)
 
 <!-- livebook:{"break_markdown":true} -->
 
 ### Guards
 
-* Reading
-* Guards
+* [Guards](drills/guards.livemd)
 
 <!-- livebook:{"break_markdown":true} -->
 
 ### String Manipulation
 
-* Strings and Binaries
-* Regex
+* [Strings and Binaries](drills/stringbinary.livemd)
+* [Regex](drills/regex.livemd)
