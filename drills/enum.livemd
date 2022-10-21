@@ -1,7 +1,48 @@
 # Enum
 
-## Section
+## The Enum Module Review
+
+The Enum module in Elixir provides a set of functions for working with collections of data, known as enumerables.
+
+<!-- livebook:{"break_markdown":true} -->
+
+### Enum.map()
+
+In this section You will do drills with Enum.map only.
+
+<!-- livebook:{"break_markdown":true} -->
+
+Example: Write a map that doubles the values in a list.
 
 ```elixir
-
+list = [4, 265, 22, 9]
+Enum.map(list, fn x -> x * 2 end)
 ```
+
+Write a map that loops through a map and prints out the value in a key value pair.
+
+```elixir
+person = %{name: "Izzy", age: "30ish", gender: "Female"}
+```
+
+<details style="background-color: lightgreen; padding: 1rem; margin: 1rem 0;">
+<summary>Example Solution</summary>
+
+```elixir
+Enum.map(person, fn {_key, value} -> value end)
+```
+</details>
+
+Convert a map of tempuratures from Celsius to Fahrenheit.
+
+```elixir
+celsius = [4, 20, 32, 40, 22, 11]
+```
+
+<details style="background-color: lightgreen; padding: 1rem; margin: 1rem 0;">
+<summary>Example Solution</summary>
+
+```elixir
+Enum.map(celsius, fn temp -> temp * 1.8 + 32 end)
+```
+</details>

@@ -1,5 +1,14 @@
 # Elixir Drillbook
 
+```elixir
+Mix.install([
+  {:youtube, github: "brooklinjazz/youtube"},
+  {:hidden_cell, github: "brooklinjazz/hidden_cell"},
+  {:tested_cell, github: "brooklinjazz/tested_cell"}
+  # {:utils, path: "#{__DIR__}/../utils"}
+])
+```
+
 ## Overview
 
 This is a companion drillbook for the Dockyard Academy curriculum. It mirrors the sections and provides extra drills for the basics to help develop muscle memory for syntax and should be completed along with each section and repeated as needed to help with recall.
