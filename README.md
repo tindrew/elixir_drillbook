@@ -1,4 +1,4 @@
-### Drillbook for the Dockyard Academy Curriculum
+# Drillbook for the Dockyard Academy Curriculum
 
 ## Overview
 
@@ -9,7 +9,16 @@ A collection of short exercises/drills designed to teach muscle memory and help 
 
 For instance if you've done the function section of the curriculum, you can then do function dills in the drillbook to build more muscle memory and help with remembering syntax.
 
-### Current Exercise Count: 
+## Getting Started
+
+1. Install Docker
+2. `$ docker run -it --rm --name drillbook -p 8080:8080 -v $(pwd):/data livebook/livebook`
+3. Go to the local url from the output and open `drillbook.livemd`
+
+
+---
+
+## Exercises
 
 **Basics**
 
@@ -38,7 +47,7 @@ For instance if you've done the function section of the curriculum, you can then
 - Ranges:
 - Enum: 2
 
-**Comprehensions and Non-Enumerable Data Types
+**Comprehensions and Non-Enumerable Data Types**
 
 - Enumerating on Non-Enumerables:
 - Comprehensions:
