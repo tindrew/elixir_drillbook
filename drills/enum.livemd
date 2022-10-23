@@ -12,7 +12,7 @@ In this section, you will do drills with **Enum.map()** ("Enum.map/2" in Elixir 
 
 <!-- livebook:{"break_markdown":true} -->
 
-**Drill 1**: WUse Enum.map/2 to double the values in a list.
+**Drill 1**: Use Enum.map/2 to double the values in a list.
 
 ```elixir
 list = [4, 265, 22, 9]
@@ -135,8 +135,9 @@ family = %{mom: "Wilma", dad: "Fred", brother: "Bam-bam", sister: "Pebbles", pet
 <summary>Example Solution</summary>
 
 ```elixir
-# WRONG ... partial solution ... NOT returning a map ... 
+# ONE solution ... not the most elegant: 
 Enum.filter(family, fn {key, value} ->  if key in [:mom, :dad], do: {key, value} end)
+ |> Enum.into(%{})
 ```
 </details>
 
