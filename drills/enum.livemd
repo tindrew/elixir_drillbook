@@ -6,6 +6,29 @@ The Enum module in Elixir provides a set of functions for working with collectio
 
 <!-- livebook:{"break_markdown":true} -->
 
+### Enum.member?()
+
+In this section, you will do drills with **Enum.member?()**.
+
+<!-- livebook:{"break_markdown":true} -->
+
+**Drill 1**: Find out if a target number is in a list of numbers.
+
+```elixir
+target = 2
+numbers = 1..100
+```
+
+<details style="background-color: lightgreen; padding: 1rem; margin: 1rem 0;">
+<summary>Example Solution</summary>
+
+```elixir
+Enum.member?(numbers, target)
+```
+</details>
+
+<!-- livebook:{"break_markdown":true} -->
+
 ### Enum.map()
 
 In this section, you will do drills with **Enum.map()** ("Enum.map/2" in Elixir arity-speak).
@@ -19,7 +42,7 @@ list = [4, 265, 22, 9]
 Enum.map(list, fn x -> x * 2 end)
 ```
 
-**Drill 2**: Use Enum.map/2 to loop through a map and print out the value of each key-value pair in person below.
+**Drill 2**: Use Enum.map/2 to loop through a map and return a list of only the values from each key-value pair in person below.
 
 ```elixir
 person = %{name: "Izzy", age: "30ish", gender: "Female"}
@@ -148,3 +171,75 @@ Enum.filter(family, fn {key, value} ->  if key in [:mom, :dad], do: {key, value}
 <!-- livebook:{"break_markdown":true} -->
 
 **Drill 5**: Use Enum.filter/2 to evaluate a list of ... .
+
+<!-- livebook:{"break_markdown":true} -->
+
+### Enum.reduce()
+
+<!-- livebook:{"break_markdown":true} -->
+
+In this section, you will do drills with Enum.reduce().
+
+"Enum.reduce/3" is the more explicit form of the function.
+"Enum.reduce/2" uses the first item in the Enumeration as the starting accumulator.
+
+<!-- livebook:{"break_markdown":true} -->
+
+**Drill 1**: Use Enum.reduce/3 to add all the numbers in a list.
+
+```elixir
+numbers = [1, 2, 3, 4]
+```
+
+<details style="background-color: lightgreen; padding: 1rem; margin: 1rem 0;">
+<summary>Example Solution</summary>
+
+```elixir
+# reduce/3 explicitly requires an initial value for the accumulator: 
+Enum.reduce(numbers, 0, fn x, acc ->  x + acc end)
+
+```
+</details>
+
+<!-- livebook:{"break_markdown":true} -->
+
+**Drill 2**: Use Enum.reduce/2 instead to add all the numbers in a list.
+
+<!-- livebook:{"break_markdown":true} -->
+
+<details style="background-color: lightgreen; padding: 1rem; margin: 1rem 0;">
+<summary>Example Solution</summary>
+
+```elixir
+# reduce/2 uses the first element as the starting accumulator: 
+Enum.reduce(numbers, fn a, b ->  a + b end)
+
+```
+</details>
+
+<!-- livebook:{"break_markdown":true} -->
+
+**Drill 3**: Use Enum.reduce/3 to remove duplicates.
+
+Note that even though reduce returns a single variable - that variable can be a list.
+
+```elixir
+letters = ['a', 'b', 'a', 'c', 'c', 'd']
+# => ['a', 'b', 'c', 'd']
+```
+
+<details style="background-color: lightgreen; padding: 1rem; margin: 1rem 0;">
+<summary>Example Solution</summary>
+
+```elixir
+# the accumulator can be a list too: 
+Enum.reduce(letters, [], fn letter, acc ->  
+  if Enum.member?(acc, letter) do
+    acc
+  else
+    acc ++ [letter]
+  end
+end)
+
+```
+</details>
